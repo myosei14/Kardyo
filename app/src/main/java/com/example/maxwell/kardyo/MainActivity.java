@@ -3,12 +3,11 @@ package com.example.maxwell.kardyo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class SignupActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signup);
-
+        setContentView(R.layout.activity_main);
     }
 }

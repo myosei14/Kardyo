@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "509309248684",
+    "firebase_url": "https://kardyo-37979.firebaseio.com",
+    "project_id": "kardyo-37979",
+    "storage_bucket": "kardyo-37979.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509309248684:android:7111a4c7c0f4ff92",
+        "android_client_info": {
+          "package_name": "com.example.maxwell.kardyo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509309248684-8eut4e99lba9p6ea449qjv99ijlhi526.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maxwell.kardyo",
+            "certificate_hash": "86e46c9d1a5e86d8eb76c3af6ab309cc57dfae36"
+          }
+        },
+        {
+          "client_id": "509309248684-pll5crnoko4cf9pgg71gdb5u4cacsto9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTpu4mNGQdwZie6tHovKQvc1LDeXpMJYE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509309248684-pll5crnoko4cf9pgg71gdb5u4cacsto9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

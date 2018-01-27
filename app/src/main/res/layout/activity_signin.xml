@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maxwell.kardyo.SigninActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/TV_copyright"
+
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif"
+        android:foreground="@android:color/transparent"
+        android:paddingTop="5dp"
+        android:text="@string/copyright_info"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siginBtn" />
+
+    <EditText
+        android:id="@+id/usernameEt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="154dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="@string/SignInPassword"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/siginBtn"
+        app:layout_constraintStart_toStartOf="@+id/usernameEt"
+        app:layout_constraintTop_toBottomOf="@+id/usernameEt" />
+
+    <Button
+        android:id="@+id/siginBtn"
+        android:layout_width="104dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="74dp"
+        android:layout_marginEnd="85dp"
+        android:text="Sign in"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/TV_copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEt" />
+
+</android.support.constraint.ConstraintLayout>

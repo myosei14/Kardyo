@@ -16,6 +16,16 @@ public class HomePage extends AppCompatActivity {
         //sends user to signup page
         final Button Bsignup = (Button) findViewById(R.id.Bsignup);
 
+//        Bsignup.setOnClickListener(
+//                new View.OnClickListener()
+//                {
+//                    public void onClick(View v){
+//                        Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
+//                        startActivity(intent);
+//                    }
+//                }//OnClickListener
+//        );
+
         Bsignup.setOnClickListener(
                 new View.OnClickListener()
                 {
@@ -25,15 +35,15 @@ public class HomePage extends AppCompatActivity {
                     }
                 }//OnClickListener
         );
-
         //sends user to login page
        final Button BlogIn = (Button)findViewById(R.id.BlogIn);
        BlogIn.setOnClickListener(
                new View.OnClickListener(){
                    @Override
                    public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), SigninActivity.class);
                     startActivity(intent);
+                    //startActivity(new Intent(Homepage.this, LoginActivity.class));
                    }
                }
        );

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maxwell.kardyo.SignupActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/TV_copyright"
+
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif"
+        android:foreground="@android:color/transparent"
+        android:paddingTop="5dp"
+        android:text="@string/copyright_info"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docRelSignupBtn" />
+
+    <EditText
+        android:id="@+id/signupNameEt"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signupEmailEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/signupNameEt"
+        app:layout_constraintTop_toBottomOf="@+id/signupNameEt" />
+
+    <EditText
+        android:id="@+id/signupContactEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Contact"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/signupEmailEt"
+        app:layout_constraintTop_toBottomOf="@+id/signupEmailEt" />
+
+    <EditText
+        android:id="@+id/signupPassEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/signupUsernameEt"
+        app:layout_constraintTop_toTopOf="@+id/signupUsernameEt" />
+
+    <EditText
+        android:id="@+id/signupConPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/signupPassEt"
+        app:layout_constraintTop_toBottomOf="@+id/signupPassEt" />
+
+    <EditText
+        android:id="@+id/signupUsernameEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/statusEt"
+        app:layout_constraintTop_toBottomOf="@+id/statusEt" />
+
+    <Button
+        android:id="@+id/docRelSignupBtn"
+        android:layout_width="102dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginTop="39dp"
+        android:text="Sign Up"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/docAgreeCb"
+        app:layout_constraintTop_toBottomOf="@+id/docFemaleRb" />
+
+    <CheckBox
+        android:id="@+id/docAgreeCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="85dp"
+        android:text="Agree"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/TV_copyright"
+        app:layout_constraintEnd_toStartOf="@+id/docRelSignupBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/docMaleRb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Male"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/signupConPass"
+        app:layout_constraintTop_toBottomOf="@+id/signupConPass" />
+
+    <RadioButton
+        android:id="@+id/docFemaleRb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="9dp"
+        android:text="Female"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/signupConPass"
+        app:layout_constraintTop_toBottomOf="@+id/signupConPass" />
+
+    <EditText
+        android:id="@+id/statusEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Doctor/Relative/Patient"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/signupContactEt"
+        app:layout_constraintTop_toBottomOf="@+id/signupContactEt" />
+
+
+</android.support.constraint.ConstraintLayout>
