@@ -15,9 +15,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="180dp"
-        android:background="@android:color/white"
-        android:text="@string/log_in"
-        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/buttonColor"
+        android:text="@string/login_title"
+        android:textColor="@color/buttontextColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,9 +28,9 @@
         android:layout_height="69dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:background="@android:color/white"
+        android:background="@color/buttonColor"
         android:text="@string/sign_up"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/buttontextColor"
         app:layout_constraintBottom_toBottomOf="@+id/TV_copyright"
         app:layout_constraintEnd_toEndOf="@+id/BlogIn"
         app:layout_constraintHorizontal_bias="0.9"
@@ -65,5 +65,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/kardyo_logo" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Welcome to Kardyo"
+        android:textColor="@color/buttontextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
 
 </android.support.constraint.ConstraintLayout>
