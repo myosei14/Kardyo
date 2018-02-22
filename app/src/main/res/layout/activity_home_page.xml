@@ -4,27 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/kardyo_bg"
+    android:background="@drawable/kardyobg1"
     tools:context="com.example.maxwell.kardyo.HomePage"
     tools:layout_editor_absoluteY="81dp">
 
+    <include
+        android:id="@+id/homepage_toolbar"
+        layout="@layout/kardyo_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        />
+
     <Button
         android:id="@+id/BlogIn"
-        android:layout_width="170dp"
-        android:layout_height="67dp"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="204dp"
         android:background="@color/buttonColor"
         android:text="@string/login_title"
         android:textColor="@color/buttontextColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/homepage_toolbar" />
 
     <Button
         android:id="@+id/Bsignup"
-        android:layout_width="168dp"
+        android:layout_width="156dp"
         android:layout_height="69dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
@@ -33,17 +40,16 @@
         android:textColor="@color/buttontextColor"
         app:layout_constraintBottom_toBottomOf="@+id/TV_copyright"
         app:layout_constraintEnd_toEndOf="@+id/BlogIn"
-        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="@+id/BlogIn"
         app:layout_constraintTop_toBottomOf="@+id/BlogIn"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintVertical_bias="0.187" />
 
     <TextView
         android:id="@+id/TV_copyright"
 
         android:layout_width="0dp"
         android:layout_height="29dp"
-        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif"
         android:foreground="@android:color/transparent"
         android:paddingTop="5dp"
@@ -52,37 +58,39 @@
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="73dp"
-        android:layout_height="86dp"
+    <TextView
+        android:id="@+id/welcomeTv"
+        android:layout_width="340dp"
+        android:layout_height="39dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome to Kardyo"
+        android:textAlignment="center"
+        android:textColor="@color/buttontextColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/kardyo_logo" />
+        app:layout_constraintTop_toBottomOf="@+id/homepage_toolbar" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="84dp"
+        android:layout_height="76dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Welcome to Kardyo"
-        android:textColor="@color/buttontextColor"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/BlogIn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTv"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/kardyo_logo" />
 
 </android.support.constraint.ConstraintLayout>

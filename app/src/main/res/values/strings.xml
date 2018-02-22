@@ -48,6 +48,9 @@
     <string name="doctor_relativeBtnText">Doctor/Relative</string>
     <string name="signinemail">yesyoucan@gmail.com</string>
     <string name="signinpassword">youcan</string>
+    <string name="homepage_about">About</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 
     //string for status of the user doctor||patient||relative
     <string-array name="user_status">
@@ -61,4 +64,20 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="view_records">View Records</string>
+    <string name="view_patients">View Patients</string>
+    <string name="manage_doctor">Manage Doctor</string>
+    <string name="manage_patient">Manage Patient</string>
+    <string name="add_doctor">Add Doctor</string>
+    <string name="add_patient">Add Patient</string>
+    <string name="logout">Logout</string>
+    <string name="send_pin">Send Pin</string>
+    <string name="new_name">Name</string>
+    <string name="new_email">Email</string>
+    <string name="new_contact">Contact</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="type_here">Type here...</string>
 </resources>

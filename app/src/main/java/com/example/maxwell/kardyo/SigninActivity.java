@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,8 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         private TextView linkToSignup, emailPass;
         private FirebaseAuth firebaseAuth;
         private ProgressDialog progressDialog;
+        private Toolbar mToolbar;
+        private String userStatus;
 
 
     @Override
@@ -37,13 +40,17 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
 
 
         firebaseAuth = FirebaseAuth.getInstance();
+        mToolbar = (Toolbar)findViewById(R.id.signin_toolbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle("Sign In");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         progressDialog = new ProgressDialog(this);
         mEmail = (EditText)findViewById(R.id.siginEmailEt);
         mPassword = (EditText)findViewById(R.id.siginPassEt);
         mSigninBtn = (Button)findViewById(R.id.siginBtn);
         linkToSignup = (TextView)findViewById(R.id.linkToSignup);
         emailPass = (TextView)findViewById(R.id.emailPass);
-
 
 
         mSigninBtn.setOnClickListener(this);
@@ -93,7 +100,8 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
                                         Toast.makeText(getApplicationContext(), "Sigin Successful", Toast.LENGTH_SHORT).show();
                                         directToProfile();
                                     } else {
-                                        Toast.makeText(getApplicationContext(), "Credentials Invalid, Sigin failed !", Toast.LENGTH_SHORT).show();
+                                        progressDialog.hide();
+                                        Toast.makeText(getApplicationContext(), "Sigin failed !", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });
@@ -103,8 +111,27 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
     }//end userSignin method
 
     public void directToProfile(){
-        Intent main_activity = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(main_activity);
+//        userStatus = SignupActivity.getUserStatus();
+//        switch (userStatus){
+//            case "Doctor":
+//                Intent doc_intent = new Intent(getApplicationContext(),DocProfileActivity.class);
+//                startActivity(doc_intent);
+//                break;
+//            case "Patient":
+//                Intent patient_intent = new Intent(getApplicationContext(),PatientActivity.class);
+//                startActivity(patient_intent);
+//                break;
+//            case "Relative":
+//                Intent relative_intent = new Intent(getApplicationContext(),RelativeActivity.class);
+//                startActivity(relative_intent);
+//
+//            default: Toast.makeText(this,"User status invalid", Toast.LENGTH_SHORT).show();
+//            break;
+//        }
+
+        Intent patient_intent = new Intent(getApplicationContext(),ProfileActivity.class);
+        startActivity(patient_intent);
+
     }
 
 }

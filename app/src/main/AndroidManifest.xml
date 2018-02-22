@@ -9,8 +9,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
     <uses-feature android:name="android.hardware.wifi" />
@@ -23,7 +23,7 @@
         android:supportsRtl="true"
         android:theme="@style/kardyo">
         <activity
-            android:name=".HomePage"
+            android:name=".ProfileActivity"
             android:theme="@style/kardyo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,11 +31,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ArduinoDataActivity" />
-        <activity android:name=".UniqueSignupActivity" />
-        <activity android:name=".SigninActivity" />
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".SigninActivity"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".SignupActivity"
+            android:parentActivityName=".HomePage" />
+        <!--<activity-->
+            <!--android:name=".ProfileActivity"-->
+            <!--android:label="@string/title_activity_profile"-->
+            <!--android:theme="@style/kardyo"></activity>-->
     </application>
 
 </manifest>

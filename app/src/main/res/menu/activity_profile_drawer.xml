@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/editProfile"
+            android:title="@string/edit_profile" />
+        <item
+            android:id="@+id/managePatient"
+            android:title="@string/manage_patient" />
+        <item
+            android:id="@+id/manageDoctor"
+            android:title="@string/manage_doctor" />
+        <item
+            android:id="@+id/viewPatients"
+            android:title="@string/view_patients" />
+        <item
+            android:id="@+id/viewRecords"
+            android:title="@string/view_records" />
+        <item
+            android:id="@+id/sendPin"
+            android:title="@string/send_pin" />
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout" />
+    </group>
+
+</menu>
